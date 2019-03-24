@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Spring</string>
+    <string name="app_name">Arcadia</string>
     <string-array name="break_tipo">
         <item>Ping Pong</item>
         <item>Biliardino</item>
