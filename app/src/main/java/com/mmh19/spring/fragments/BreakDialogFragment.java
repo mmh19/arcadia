@@ -1,20 +1,19 @@
-package com.mmh19.spring;
+package com.mmh19.spring.fragments;
 
 import android.content.Context;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.Window;
-import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.NumberPicker;
 import android.widget.Spinner;
 
+import com.mmh19.spring.R;
 import com.mmh19.spring.activities.MainActivity;
 import com.mmh19.spring.models.Break;
 import com.mmh19.spring.viewmodels.BreakViewModel;
@@ -100,9 +99,9 @@ public class BreakDialogFragment extends DialogFragment {
 
     private Break buildBreak(String tipo, int orario) {
         Break br = new Break();
-        br.setTipo(spinner.getSelectedItem().toString());
+        br.setTipo(tipo);
         //TODO set autore
-        switch (spinner.getSelectedItem().toString()) {
+        switch (tipo) {
             case "Ping Pong":
                 br.setMaxPartecipanti(4);
                 br.setUrlImmagine("https://i.imgur.com/r6FP7Hb.jpg");

@@ -10,7 +10,7 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.iid.FirebaseInstanceId;
 import com.google.firebase.iid.InstanceIdResult;
-import com.mmh19.spring.BreakDialogFragment;
+import com.mmh19.spring.fragments.BreakDialogFragment;
 import com.mmh19.spring.R;
 import com.mmh19.spring.adapters.BreaksAdapter;
 import com.mmh19.spring.models.Break;

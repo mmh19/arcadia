@@ -1,11 +1,8 @@
 package com.mmh19.spring.adapters;
 
-import android.graphics.Color;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -109,7 +106,7 @@ public class BreaksAdapter extends ListAdapter<Break, BreaksAdapter.BreakHolder>
     @Override
     public BreakHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext())
-                .inflate(R.layout.item_break2, parent, false);
+                .inflate(R.layout.item_break, parent, false);
         return new BreakHolder(view);
     }
 

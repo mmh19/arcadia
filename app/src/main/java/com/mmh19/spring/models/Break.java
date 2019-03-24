@@ -16,7 +16,6 @@ public class Break {
     public String urlImmagine;
     public int maxPartecipanti;
     public int joined;
-    //public List<User> partecipanti;
     public String autore;
 
     private String idString = "";

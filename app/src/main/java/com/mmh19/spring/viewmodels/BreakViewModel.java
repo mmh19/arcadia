@@ -20,11 +20,9 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 
-import androidx.annotation.NonNull;
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
-import androidx.room.Database;
 
 public class BreakViewModel extends ViewModel {
 
@@ -32,7 +30,7 @@ public class BreakViewModel extends ViewModel {
 
     public BreakViewModel() {
         breakList = new MutableLiveData<>();
-        FirebaseDatabase.getInstance().setPersistenceEnabled(true);
+        //FirebaseDatabase.getInstance().setPersistenceEnabled(true);
         observeBreaks();
     }
 

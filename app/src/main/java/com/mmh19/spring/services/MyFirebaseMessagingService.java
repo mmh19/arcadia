@@ -1,4 +1,4 @@
-package com.mmh19.spring;
+package com.mmh19.spring.services;
 
 import android.app.NotificationManager;
 import android.content.Context;
@@ -7,15 +7,15 @@ import android.util.Log;
 
 import com.google.firebase.messaging.FirebaseMessagingService;
 import com.google.firebase.messaging.RemoteMessage;
+import com.mmh19.spring.R;
 
 import androidx.core.app.NotificationCompat;
 
 public class MyFirebaseMessagingService extends FirebaseMessagingService {
-
+    //TODO C'è da fare ancora tutto!
     @Override
     public void onMessageReceived(RemoteMessage remoteMessage) {
         super.onMessageReceived(remoteMessage);
-        Log.d("message", remoteMessage.toString());
         NotificationCompat.Builder notificationBuilder = new NotificationCompat.Builder(this, "channel_id")
                 .setContentTitle(remoteMessage.getNotification().getTitle())
                 .setContentText(remoteMessage.getNotification().getBody())
