@@ -79,19 +79,12 @@ public class MainActivity extends AppCompatActivity implements BreaksAdapter.Joi
                     @Override
                     public void onComplete(@NonNull Task<InstanceIdResult> task) {
                         if (!task.isSuccessful()) {
-                            //Log.w(TAG, "getInstanceId failed", task.getException());
                             return;
                         }
 
                         // Get new Instance ID token
                         String token = task.getResult().getToken();
                         Log.d("token", token);
-
-                        // Log and toast
-                        /*String msg = getString(R.string.msg_token_fmt, token);
-                        Log.d("fcm", msg);
-                        Toast.makeText(MainActivity.this, msg, Toast.LENGTH_SHORT).show();
-                        */
                     }
                 });
     }

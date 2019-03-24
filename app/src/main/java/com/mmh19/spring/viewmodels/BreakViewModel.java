@@ -88,6 +88,7 @@ public class BreakViewModel extends ViewModel {
     public void joinBreak(Break br) {
         Map<String, Object> childUpdates = new HashMap<>();
         Map<String, Object> brMap = br.toMap();
+        //TODO crea ovviamente problemi ma mancano le API dal backend
         brMap.put("joined", (Integer) brMap.get("joined") + 1);
         childUpdates.put("/breaks/" + br.getIdString(), brMap);
         FirebaseDatabase.getInstance().getReference().updateChildren(childUpdates);
@@ -96,6 +97,7 @@ public class BreakViewModel extends ViewModel {
     public void unjoin(Break br) {
         Map<String, Object> childUpdates = new HashMap<>();
         Map<String, Object> brMap = br.toMap();
+        //TODO come sopra
         brMap.put("joined", (Integer) brMap.get("joined") - 1);
         childUpdates.put("/breaks/" + br.getIdString(), brMap);
         FirebaseDatabase.getInstance().getReference().updateChildren(childUpdates);
