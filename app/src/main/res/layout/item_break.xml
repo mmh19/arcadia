@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:layout_margin="8dp"
+    android:orientation="vertical"
+    app:cardCornerRadius="16dp"
+    app:elevation="8dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/image_break_background"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:foreground="#59000000"
+            android:scaleType="centerCrop"
+            tools:src="@drawable/ic_launcher_background" />
+
+        <TextView
+            android:id="@+id/text_tipo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="16dp"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle2"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+            tools:text="#Ping pong" />
+
+        <TextView
+            android:id="@+id/text_inizio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle2"
+            android:textColor="@android:color/white"
+            tools:text="4 min" />
+
+        <TextView
+            android:id="@+id/text_joined"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/text_slash"
+            android:layout_marginTop="24dp"
+            android:layout_marginLeft="-16dp"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline4"
+            android:textColor="@android:color/white"
+            tools:text="4" />
+
+        <TextView
+            android:id="@+id/text_slash"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_joined"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="-36dp"
+            android:text="/"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline4"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/text_max_partecipanti"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_slash"
+            android:layout_alignRight="@id/text_slash"
+            android:layout_marginTop="-36dp"
+            android:layout_marginRight="-16dp"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline4"
+            android:textColor="@android:color/white"
+            tools:text="6" />
+
+        <ImageButton
+            android:id="@+id/button_partecipa"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="16dp"
+            android:background="?android:selectableItemBackground"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_check"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/backgroud_dialog"
+    android:orientation="vertical"
+    android:layout_margin="32dp"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/text_titolo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Cosa vuoi fare?"
+        android:layout_marginTop="8dp"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5" />
+
+    <Spinner
+        android:id="@+id/spinner_tipo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_titolo"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:layout_margin="16dp" />
+
+    <TextView
+        android:id="@+id/text_orario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spinner_tipo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:text="Tra quanto?"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5" />
+
+    <NumberPicker
+        android:id="@+id/picker_orario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_orario"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/button_break"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/picker_orario"
+        android:text="pausa!" />
+
+    <Button
+        android:id="@+id/button_annulla"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/picker_orario"
+        android:layout_toLeftOf="@id/button_break"
+        android:text="annulla"
+        android:textColor="@color/common_google_signin_btn_text_light_default" />
+
+
+</RelativeLayout>

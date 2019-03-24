@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Spring</string>
+    <string-array name="break_tipo">
+        <item>Ping Pong</item>
+        <item>Biliardino</item>
+        <item>Cochina bella fresca</item>
+        <item>Caffè</item>
+        <item>Thè caldo</item>
+        <item>Boccata d\'aria</item>
+        <item>Sala break</item>
+        <item>Videogame</item>
+    </string-array>
+    <string-array name="minuti">
+        <item>5 minuti</item>
+        <item>10 minuti</item>
+        <item>15 minuti</item>
+        <item>20 minuti</item>
+        <item>25 minuti</item>
+        <item>30 minuti</item>
+    </string-array>
+</resources>
